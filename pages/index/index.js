@@ -2,15 +2,18 @@
 *豆瓣电影Top250
 *API=https://api.douban.com/v2/movie/top250
 */
-var API_URL = 'https://api.douban.com/v2/movie/top250';
-var app = getApp();
+const API_URL = 'https://api.douban.com/v2/movie/top250';
+const app = getApp();
 
 Page({
   data: {
     movieList:[],
     hidden:false
   },
-  onLoad() {
+  handleGetOneMovieInfo:function(id){
+    console.log(id)
+  },
+  onLoad:function() {
     let _this = this;
     wx.request({
       url:API_URL,

@@ -2,13 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/newMoive/newMoive",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/movieInfo/movieInfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#118a9c",
     "navigationBarTitleText": "豆瓣电影",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
   },
   "tabBar":{
     "color":"#ccc",
@@ -24,7 +26,7 @@
       },
       {
         "pagePath":"pages/newMoive/newMoive",
-        "text":"新片榜",
+        "text":"北美票房榜",
         "iconPath":"images/newMovie1.png",
         "selectedIconPath":"images/newMovie2.png"
       },
